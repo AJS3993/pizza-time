@@ -44,10 +44,11 @@ class SignupForm extends Component {
   render() {
     return (
       <div>
+        <div className="container my-3 text-black">
         <header className="header-footer">Sign Up</header>
         <form className="form-horizontal" onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <div className="col-sm-12">
+          <div className="col-sm-12">
               <input
                 type="text"
                 className="form-control"
@@ -82,7 +83,7 @@ class SignupForm extends Component {
               />
             </div>
           </div>
-          <div className="form-group">
+           <div className="form-group">
             <div className="col-sm-12">
               <input
                 type="password"
@@ -107,6 +108,7 @@ class SignupForm extends Component {
             </div>
           </div>
         </form>
+        </div>
       </div>
     );
   }

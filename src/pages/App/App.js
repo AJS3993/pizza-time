@@ -4,6 +4,8 @@ import HomePage from "../HomePage/HomePage";
 import SignupPage from "../SignupPage/SignupPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 import "./App.css";
 
@@ -24,7 +26,9 @@ class App extends Component {
   };
   render() {
     return (
+      
       <div>
+
         <Switch>
           <Route
             exact

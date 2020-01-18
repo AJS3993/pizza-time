@@ -1,28 +1,37 @@
+import  {Button, Card}  from 'react-bootstrap';
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
+
+
 const NavBar = props => {
+
   let nav = props.user ? (
     <div>
-      <Link to="" className="NavBar-link" onClick={props.handlelogout}>
+
+      <Link to="" className="NavBar-link btn" onClick={props.handlelogout}>
         LOG OUT
       </Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <span className="NavBar-welcome">{props.user.name}</span>
+
     </div>
+    
   ) : (
     <div>
-      <Link to="/login" className="NavBar-link">
+      <Card>
+      <Button variant="outline-primary"><Link to="/login" className="NavBar-link">
         LOG IN
-      </Link>
-      &nbsp;&nbsp;|&nbsp;&nbsp;
-      <Link to="/signup" className="NavBar-link">
+      </Link></Button>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <Button variant="outline-primary"><Link to="/signup" className="NavBar-link">
         SIGN UP
-      </Link>
+      </Link></Button>
+      </Card>
     </div>
-  );
-
+  )
+  
   return <div className="NavBar">{nav}</div>;
 };
 
