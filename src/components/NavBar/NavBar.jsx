@@ -3,36 +3,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-
-
-const NavBar = props => {
-
-  let nav = props.user ? (
+const NavBar = () => (
     <div>
-
-      <Link to="" className="NavBar-link btn" onClick={props.handlelogout}>
-        LOG OUT
-      </Link>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <span className="NavBar-welcome">{props.user.name}</span>
-
-    </div>
-    
-  ) : (
-    <div>
-      <Card>
-      <Button variant="outline-primary"><Link to="/login" className="NavBar-link">
-        LOG IN
-      </Link></Button>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <Button variant="outline-primary"><Link to="/signup" className="NavBar-link">
-        SIGN UP
-      </Link></Button>
-      </Card>
+      <nav className="navbar navbar-expand-lg navbar-light  bg-light">
+        <Link className="navbar-brand" to="/">Home</Link>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link className="nav-link" to="/1">Page1</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/2">Page2</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/3">Page3</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   )
-  
-  return <div className="NavBar">{nav}</div>;
-};
 
-export default NavBar;
+  export default NavBar
