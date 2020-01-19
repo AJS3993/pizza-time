@@ -1,4 +1,4 @@
-import  {Button, Card}  from 'react-bootstrap';
+import  {Button}  from 'react-bootstrap';
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
@@ -21,7 +21,7 @@ const Login = props => {
   ) : (
     <div>
 
-      <Card>
+      
       <Button variant="outline-primary"><Link to="/login" className="Login-link">
         LOG IN
       </Link></Button>
@@ -29,7 +29,7 @@ const Login = props => {
       <Button variant="outline-primary"><Link to="/signup" className="Login-link">
         SIGN UP
       </Link></Button>
-      </Card>
+    
 
     </div>
   )

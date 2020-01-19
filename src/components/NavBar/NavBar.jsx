@@ -1,24 +1,23 @@
-import  {Button, Card}  from 'react-bootstrap';
+import  {Nav, Navbar}  from 'react-bootstrap';
 import React from "react";
-import { Link } from "react-router-dom";
+import Login from "./../Login/Login";
+// import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-const NavBar = () => (
+const NavBar = (props) => (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light  bg-light">
-        <Link className="navbar-brand" to="/">Home</Link>
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link className="nav-link" to="/1">Page1</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/2">Page2</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/3">Page3</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="#home">Pizza Time</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="#features">Menu</Nav.Link>
+    </Nav>
+    <Nav>
+    <Nav.Link href="#profile">User Profile</Nav.Link>
+    <Nav.Link href="#order">Order</Nav.Link>
+    {/* <NavBar /> */}
+      <Login user={props.user} handlelogout={props.handlelogout} />
+    </Nav>
+  </Navbar>
     </div>
   )
 
