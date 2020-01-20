@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import userService from "../../utils/userService";
 import "./SignupForm.css";
 
+// import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
+
 class SignupForm extends Component {
   state = {
     name: "",
@@ -43,12 +45,15 @@ class SignupForm extends Component {
 
   render() {
     return (
+
       <div>
+
         <div className="container my-3 text-black">
         <header className="header-footer">Sign Up</header>
         <form className="form-horizontal" onSubmit={this.handleSubmit}>
           <div className="form-group">
           <div className="col-sm-12">
+              
               <input
                 type="text"
                 className="form-control"
@@ -57,10 +62,12 @@ class SignupForm extends Component {
                 name="name"
                 onChange={this.handleChange}
               />
+
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
+              
               <input
                 type="email"
                 className="form-control"
@@ -69,10 +76,12 @@ class SignupForm extends Component {
                 name="email"
                 onChange={this.handleChange}
               />
+
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
+             
               <input
                 type="password"
                 className="form-control"
@@ -81,10 +90,12 @@ class SignupForm extends Component {
                 name="password"
                 onChange={this.handleChange}
               />
+
             </div>
           </div>
            <div className="form-group">
             <div className="col-sm-12">
+              
               <input
                 type="password"
                 className="form-control"
@@ -93,6 +104,7 @@ class SignupForm extends Component {
                 name="passwordConf"
                 onChange={this.handleChange}
               />
+
             </div>
           </div>
           <div className="form-group">
@@ -109,6 +121,7 @@ class SignupForm extends Component {
           </div>
         </form>
         </div>
+      
       </div>
     );
   }

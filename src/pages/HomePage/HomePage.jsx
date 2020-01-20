@@ -1,4 +1,4 @@
-import  {MDBContainer, MDBRow, MDBCol} from "mdbreact";
+import  {MDBContainer, MDBRow, MDBCol, Card} from "mdbreact";
 import React from "react";
 // import Login from "../../components/Login/Login";
 import NavBar from "../../components/NavBar/NavBar";
@@ -13,13 +13,13 @@ const HomePage = props => {
 
       <MDBContainer>
   <MDBRow>
-    <MDBCol className= "col" size="12">.col-6</MDBCol>
+  <MDBCol className= "col top" size="12"><Card>.col-6</Card></MDBCol>
   </MDBRow>
 
   <MDBRow>
-    <MDBCol className= "col" sm="4">.col-sm-4</MDBCol>
-    <MDBCol className= "col" sm="4">.col-sm-4</MDBCol>
-    <MDBCol className= "col" sm="4">.col-sm-4</MDBCol>
+    <MDBCol className= "col" sm="4"><Card>.col-6</Card></MDBCol>
+    <MDBCol className= "col" sm="4"><Card>.col-6</Card></MDBCol>
+    <MDBCol className= "col" sm="4"><Card>.col-6</Card></MDBCol>
   </MDBRow>
 
 </MDBContainer>

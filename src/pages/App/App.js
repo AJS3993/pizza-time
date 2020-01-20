@@ -4,6 +4,7 @@ import HomePage from "../HomePage/HomePage";
 import SignupPage from "../SignupPage/SignupPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
+import MenuPage from "./../MenuPage/MenuPage"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -60,6 +61,17 @@ class App extends Component {
               />
             )}
           />
+
+          <Route
+            exact
+            path="/menu"
+            render={({ history }) => (
+              <MenuPage
+                
+                />
+            )}
+          />
+
         </Switch>
       </div>
     );
