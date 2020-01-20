@@ -4,7 +4,9 @@ import HomePage from "../HomePage/HomePage";
 import SignupPage from "../SignupPage/SignupPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
-import MenuPage from "./../MenuPage/MenuPage"
+import MenuPage from "./../MenuPage/MenuPage";
+import ProfilePage from "./../ProfilePage/ProfilePage";
+import OrderPage from "./../OrderPage/OrderPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -67,6 +69,26 @@ class App extends Component {
             path="/menu"
             render={({ history }) => (
               <MenuPage
+                
+                />
+            )}
+          />
+
+          <Route
+            exact
+            path="/profile"
+            render={({ history }) => (
+              <ProfilePage
+                
+                />
+            )}
+          />
+
+          <Route
+            exact
+            path="/order"
+            render={({ history }) => (
+              <OrderPage
                 
                 />
             )}

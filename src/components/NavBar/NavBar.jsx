@@ -13,8 +13,8 @@ const NavBar = (props) => (
     <Nav.Link><Link to="/menu">Menu</Link></Nav.Link>
     </Nav>
     <Nav>
-    <Nav.Link href="#profile">User Profile</Nav.Link>
-    <Nav.Link href="#order">Order</Nav.Link>
+    <Nav.Link><Link to="/profile">User Profile</Link></Nav.Link>
+    <Nav.Link><Link to="/order">Order</Link></Nav.Link>
     {/* <NavBar /> */}
       <Login user={props.user} handlelogout={props.handlelogout} />
     </Nav>

@@ -7,21 +7,12 @@ import "./MenuPage.css";
 const MenuPage = () => {
   return (
     <div className="MenuPage">
-
-      <h1>menu</h1>
-
-<NavBar />
-
-
-      <MDBContainer>
- 
-  <MDBRow>
-  <MDBCol className= "col top" size="12"><Card>Menu</Card></MDBCol>
-  </MDBRow>
-
-</MDBContainer> */}
-
-
+      <NavBar />
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol className= "col top" size="12"><Card>Menu</Card></MDBCol>
+          </MDBRow>
+        </MDBContainer> 
     </div>
   );
 };
