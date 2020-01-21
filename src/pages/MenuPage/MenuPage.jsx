@@ -23,7 +23,8 @@ const MenuPage = () => {
   return (
     <div className="MenuPage">
       <NavBar />
-        <MDBContainer> 
+        <MDBContainer>
+          <h1>Menu</h1> 
           <MDBRow>
             <MDBCol className= "col top" size="12"><Card><MenuListItem menu={menu}/></Card></MDBCol>
           </MDBRow>
