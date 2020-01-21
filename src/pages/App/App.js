@@ -69,7 +69,7 @@ class App extends Component {
             path="/menu"
             render={({ history }) => (
               <MenuPage
-                
+                menu={this.state.menu}
                 />
             )}
           />

@@ -25,7 +25,7 @@ const Login = props => {
       <Button variant="outline-primary"><Link to="/login" className="Login-link">
         LOG IN
       </Link></Button>
-      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <Button variant="outline-primary"><Link to="/signup" className="Login-link">
         SIGN UP
       </Link></Button>

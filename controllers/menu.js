@@ -1,9 +1,10 @@
 const Menu = require("../models/menu");
 
 module.exports = {
-index
+index 
 }
 
-function index(req, res) {
-    console.log('index')
-   }
+async function index(req, res) {
+	const menu = await Menu.find({});
+	res.status(200).json(menu);
+  }

@@ -1,13 +1,11 @@
-// const express = require("express");
-// const router = express.Router();
-// const menuCtrl = require("../controllers/menu");
-// import MenuPage from './pages/MenuPage';
-// import { Route, Switch } from 'react-router-dom';
+const express = require("express");
+const router = express.Router();
+const menuCtrl = require("../../controllers/menu");
 
-// const Router = () => (
-//     <Switch>
-// <Route exact path='/menu' component={MenuPage}/>
-// </Switch>
-// )
+/*---------- Public Routes ----------*/
+router.get('/index', menuCtrl.index);
 
-// export default Router
+
+/*---------- Protected Routes ----------*/
+
+module.exports = router;

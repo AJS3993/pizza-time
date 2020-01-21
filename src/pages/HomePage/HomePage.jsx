@@ -12,6 +12,7 @@ const HomePage = props => {
       {/* <Login user={props.user} handlelogout={props.handlelogout} /> */}
 
       <MDBContainer>
+
   <MDBRow>
   <MDBCol className= "col top" size="12"><Card>.col-6</Card></MDBCol>
   </MDBRow>
