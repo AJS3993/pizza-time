@@ -25,7 +25,7 @@ class App extends Component {
       Items: [...state.Items, newItem]
     }),
     // Using cb to wait for state to update before rerouting
-    () => this.props.history.push('/'));
+    () => this.props.history.push('/menu'));
   }
   
 

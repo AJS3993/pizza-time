@@ -19,7 +19,7 @@ import * as Services from '../../Services/Services';
       this.setState(state => ({
         // Yay, filter returns a NEW array
         menu: state.menu.filter(p => p._id !== id)
-      }), () => this.props.history.push('/'));
+      }), () => this.props.history.push('/menu'));
     }
 
 
