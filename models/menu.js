@@ -1,12 +1,13 @@
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
-
-const menu = [
+var menuSchema = new Schema(
   {
-    name: "pepperoni",
-    description: 'A pizza with pepperoni',
-    price: '$9'
+    name: { type: String},
+    description: { type: String},
+    price: { type: String}
   }
-];
+);
 
 
-module.exports = menu
+module.exports = mongoose.model('Menu', menuSchema);

@@ -7,18 +7,55 @@ import userService from "../../utils/userService";
 import MenuPage from "./../MenuPage/MenuPage";
 import ProfilePage from "./../ProfilePage/ProfilePage";
 import OrderPage from "./../OrderPage/OrderPage";
+import AddPage from './../AddPage/AddPage';
+import * as Services from '../../Services/Services';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
 import "./App.css";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      user: userService.getUser()
-    };
+  state = {
+    Items: []
+  };
+
+  handleAddItem = async newItemData => {
+    const newItem = await Services.create(newItemData);
+    this.setState(state => ({
+      Items: [...state.Items, newItem]
+    }),
+    // Using cb to wait for state to update before rerouting
+    () => this.props.history.push('/'));
   }
+  
+
+  handleUpdateItem = async updatedItemData => {
+    const updatedItem = await Services.update(updatedItemData);
+    const newItemsArray = this.state.Items.map(p => 
+      p._id === updatedItem._id ? updatedItem : p
+    );
+    this.setState(
+      {Items: newItemsArray},
+      () => this.props.history.push('/')
+    );
+  }
+
+  handleDeletePuppy= async id => {
+    await Services.deleteOne(id);
+    this.setState(state => ({
+      // Yay, filter returns a NEW array
+      Items: state.Items.filter(p => p._id !== id)
+    }), () => this.props.history.push('/'));
+  }
+
+  /*--- Lifecycle Methods ---*/
+
+  async componentDidMount() {
+    const Items = await Services.getAll();
+    this.setState({Items});
+  }
+
+
   handlelogout = () => {
     userService.logout();
     this.setState({ user: null });
@@ -90,6 +127,16 @@ class App extends Component {
             render={({ history }) => (
               <OrderPage
                 
+                />
+            )}
+          />
+
+          <Route
+            exact
+            path="/add"
+            render={({ history }) => (
+              <AddPage
+              handleAddItem={this.handleAddItem}
                 />
             )}
           />
