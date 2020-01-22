@@ -3,7 +3,7 @@ const router = express.Router();
 const menuCtrl = require("../../controllers/menu");
 
 /*---------- Public Routes ----------*/
-router.get('/index', menuCtrl.index);
+router.get('/', menuCtrl.index);
 router.get('/:id', menuCtrl.show);
 router.post('/', menuCtrl.create);
 router.delete('/:id', menuCtrl.delete);

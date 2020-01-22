@@ -40,7 +40,7 @@ class AddPage extends Component {
           <div className="form-group">
             <label>Name</label>
             <input
-            placeholder="Pizza"
+            
               className="form-control"
               name="name"
               value={this.state.formData.name}
@@ -51,10 +51,10 @@ class AddPage extends Component {
           <div className="form-group">
             <label>Description</label>
             <input
-            placeholder="Describe food item here"
+            
               className="form-control"
               name="description"
-              value={this.state.formData.description}
+              // value={this.state.formData.description}
               onChange={this.handleChange}
               required
             />
@@ -62,10 +62,10 @@ class AddPage extends Component {
           <div className="form-group">
             <label>Price</label>
             <input
-            placeholder="Price in $"
+            
               className="form-control"
               name="price"
-              value={this.state.formData.price}
+              // value={this.state.formData.price}
               onChange={this.handleChange}
             />
           </div>
