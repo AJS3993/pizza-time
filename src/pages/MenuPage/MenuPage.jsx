@@ -1,31 +1,27 @@
 import { MDBContainer, MDBRow, MDBCol, Card } from "mdbreact";
 import React, { Component } from "react";
-// import Login from "../../components/Login/Login";
 import NavBar from "../../components/NavBar/NavBar";
 import "./MenuPage.css";
 // import menu from './../../components/MenuListItem/MenuListItem'
-import MenuListItem from './../../components/MenuListItem/MenuListItem'
+import MenuListItemStuff from './../../components/MenuListItemStuff/MenuListItemStuff'
 // import { render } from "@testing-library/react";
 import {getAll} from "./../../Services/Services"
-
-// const menu = [
-//   {
-//     name: "pepperoni",
-//     description: 'A pizza with pepperoni',
-//     price: '$9'
-//   },
-//   {
-//     name: "cheeze",
-//     description: 'A pizza with cheeze',
-//     price: '$7'
-//   }
-// ];
+import * as Services from '../../Services/Services';
 
 
   class MenuPage extends Component {
     state = {
       menu: []
     }
+
+    handleDeleteItem= async id => {
+      await Services.deleteOne(id);
+      this.setState(state => ({
+        // Yay, filter returns a NEW array
+        menu: state.menu.filter(p => p._id !== id)
+      }), () => this.props.history.push('/'));
+    }
+
 
     async componentDidMount() {
       const menu = await getAll();
@@ -40,12 +36,33 @@ import {getAll} from "./../../Services/Services"
       return (
         <div className="MenuPage">
           <NavBar />
+
           <MDBContainer>
             <h1>Menu</h1>
             <MDBRow>
-              <MDBCol className="col top" size="12"><Card><MenuListItem menu={menu} /></Card></MDBCol>
+           
+     
+     
+      <MDBCol className="col top" size="12">
+
+      {menu.map(menu => (<Card>
+        {menu.name} <br/>
+        {menu.description} <br/>
+       {menu.price} <br/>
+ <button
+          className='btn btn-xs btn-danger margin-left-10'
+          onClick={() => this.handleDeleteItem(menu._id)}
+        >
+          DELETE
+        </button>
+      </Card>
+      ))}
+      </MDBCol>
+     
             </MDBRow>
+             
           </MDBContainer>
+          
         </div>
       )
     }

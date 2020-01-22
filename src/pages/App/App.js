@@ -40,13 +40,13 @@ class App extends Component {
     );
   }
 
-  handleDeleteItem= async id => {
-    await Services.deleteOne(id);
-    this.setState(state => ({
-      // Yay, filter returns a NEW array
-      Items: state.Items.filter(p => p._id !== id)
-    }), () => this.props.history.push('/'));
-  }
+  // handleDeleteItem= async id => {
+  //   await Services.deleteOne(id);
+  //   this.setState(state => ({
+  //     // Yay, filter returns a NEW array
+  //     Items: state.Items.filter(p => p._id !== id)
+  //   }), () => this.props.history.push('/'));
+  // }
 
   /*--- Lifecycle Methods ---*/
 
@@ -106,6 +106,7 @@ class App extends Component {
             path="/menu"
             render={({ history }) => (
               <MenuPage
+              history={history}
                 menu={this.state.menu}
                 handleDeleteItem={this.handleDeleteItem}
                 />
