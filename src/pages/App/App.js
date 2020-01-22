@@ -40,7 +40,7 @@ class App extends Component {
     );
   }
 
-  handleDeletePuppy= async id => {
+  handleDeleteItem= async id => {
     await Services.deleteOne(id);
     this.setState(state => ({
       // Yay, filter returns a NEW array
@@ -107,6 +107,7 @@ class App extends Component {
             render={({ history }) => (
               <MenuPage
                 menu={this.state.menu}
+                handleDeleteItem={this.handleDeleteItem}
                 />
             )}
           />

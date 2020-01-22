@@ -12,7 +12,8 @@ const menu = props => (
         {menu.description} <br/>
        {menu.price} <br/>
       
-     
+      
+
       </Card>
       
     ))}
