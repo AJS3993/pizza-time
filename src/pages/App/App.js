@@ -6,6 +6,7 @@ import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
 import MenuPage from "./../MenuPage/MenuPage";
 import ProfilePage from "./../ProfilePage/ProfilePage";
+import EditPage from './../EditPage/EditPage';
 import OrderPage from "./../OrderPage/OrderPage";
 import AddPage from './../AddPage/AddPage';
 import * as Services from '../../Services/Services';
@@ -142,6 +143,13 @@ class App extends Component {
                 />
             )}
           />
+
+            <Route exact path='/edit' render={({location}) => 
+            <EditPage
+              handleUpdatePuppy={this.handleUpdateItem}
+              location={location}
+            />
+          } />
 
         </Switch>
       </div>

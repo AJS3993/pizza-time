@@ -1,9 +1,10 @@
 import { MDBContainer, MDBRow, MDBCol, Card } from "mdbreact";
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import NavBar from "../../components/NavBar/NavBar";
 import "./MenuPage.css";
 // import menu from './../../components/MenuListItem/MenuListItem'
-import MenuListItemStuff from './../../components/MenuListItemStuff/MenuListItemStuff'
+// import MenuListItemStuff from './../../components/MenuListItemStuff/MenuListItemStuff'
 // import { render } from "@testing-library/react";
 import {getAll} from "./../../Services/Services"
 import * as Services from '../../Services/Services';
@@ -49,6 +50,17 @@ import * as Services from '../../Services/Services';
         {menu.name} <br/>
         {menu.description} <br/>
        {menu.price} <br/>
+
+       <Link
+          className='btn btn-xs btn-warning'
+          to={{
+            pathname: '/edit',
+            state: {menu}
+          }}
+        >
+          EDIT
+        </Link>
+
  <button
           className='btn btn-xs btn-danger margin-left-10'
           onClick={() => this.handleDeleteItem(menu._id)}
