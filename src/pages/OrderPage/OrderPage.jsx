@@ -13,7 +13,13 @@ const OrderPage = () => {
             <MDBCol className= "col top" size="12"><h1>Order</h1></MDBCol>
         </MDBRow>
       </MDBContainer> 
-      
+     
+     {/* {order.map(item => (<Card>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <p>{item.price}</p>
+                </Card>
+))}; */}
     </div>
   );
 };

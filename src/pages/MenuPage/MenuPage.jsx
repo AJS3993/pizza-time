@@ -35,15 +35,13 @@ class MenuPage extends Component {
       <div className="MenuPage">
         <NavBar />
 
-        <MDBContainer>
           <h1>Menu</h1>
+          
+          <MDBContainer>
+          
           <MDBRow>
 
-
-
-            <MDBCol className="col top" size="12">
-
-              {menu.map(item => (<Card>
+              {menu.map(item => (<MDBCol sm="4" className="col top" ><Card>
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
                 <p>{item.price}</p>
@@ -54,10 +52,13 @@ class MenuPage extends Component {
                     className='btn btn-xs btn-info'
                     to={{
                       pathname: '/order',
-                      state: {  }
+                      state: { name: item.name, 
+                        description: item.description, 
+                        price: item.price,
+                        _id: item._id }
                     }}
                   >
-                    ADD
+                    ORDER
                   </Link>
                   <Link
                     className='btn btn-xs btn-warning'
@@ -84,12 +85,12 @@ class MenuPage extends Component {
                 </div>
 
               </Card>
-              ))}
+             
             </MDBCol>
-
+            ))}
           </MDBRow>
-
-        </MDBContainer>
+          </MDBContainer>
+     
       </div>
     )
   }

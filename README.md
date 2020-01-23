@@ -1,6 +1,6 @@
 # PizzaTime
 
-<img src="https://cdn.popmenu.com/image/upload/c_limit,f_auto,h_1440,q_auto,w_1440/v8k9fthvp3yxyhn4urvo.jpg" title="source: imgur.com" /></a>
+<img src="https://cdn.popmenu.com/image/upload/c_limit,f_auto,h_1440,q_auto,w_1440/v8k9fthvp3yxyhn4urvo.jpg" title="source: imgur.com" />
 
 ---
 
