@@ -2,7 +2,6 @@ import  {Nav, Navbar}  from 'react-bootstrap';
 import React from "react";
 import Login from "./../Login/Login";
 import { Link } from "react-router-dom";
-// import MenuPage from "./../../pages/MenuPage/MenuPage"
 import "./NavBar.css";
 
 const NavBar = (props) => (

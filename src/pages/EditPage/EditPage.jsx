@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import  {MDBContainer} from "mdbreact";
 import {Link} from 'react-router-dom';
 import NavBar from "../../components/NavBar/NavBar";
-import {update} from '../../Services/Services'
+import {update} from '../../services2/services2'
 
 
 class EditPage extends Component {

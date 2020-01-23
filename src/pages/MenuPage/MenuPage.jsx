@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import NavBar from "../../components/NavBar/NavBar";
 import "./MenuPage.css";
-import { getAll } from "./../../Services/Services"
-import * as Services from '../../Services/Services';
+import { getAll } from "../../services2/services2"
+import * as Services from '../../services2/services2';
 
 
 class MenuPage extends Component {

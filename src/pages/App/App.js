@@ -9,7 +9,7 @@ import ProfilePage from "./../ProfilePage/ProfilePage";
 import EditPage from './../EditPage/EditPage';
 import OrderPage from "./../OrderPage/OrderPage";
 import AddPage from './../AddPage/AddPage';
-import * as Services from '../../Services/Services';
+import * as Services from '../../services2/services2';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
