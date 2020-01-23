@@ -20,7 +20,9 @@ export function update(item) {
     method: 'PUT',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify(item)
-  }).then(res => res.json());
+  }).then((res) => {
+    return res.json()
+  });
 }
 
 export function deleteOne(id) {

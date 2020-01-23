@@ -7,7 +7,7 @@ import "./NavBar.css";
 
 const NavBar = (props) => (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="danger" variant="dark">
     <Navbar.Brand><Link to="/">Pizza Time</Link></Navbar.Brand>
     <Nav className="mr-auto">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

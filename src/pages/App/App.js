@@ -137,15 +137,16 @@ class App extends Component {
           <Route
             exact
             path="/add"
-            render={({ history }) => (
+            render={() => (
               <AddPage
               handleAddItem={this.handleAddItem}
                 />
             )}
           />
 
-            <Route exact path='/edit' render={({location}) => 
+            <Route exact path='/edit' render={({location, history}) => 
             <EditPage
+              history={history}
               handleUpdatePuppy={this.handleUpdateItem}
               location={location}
             />

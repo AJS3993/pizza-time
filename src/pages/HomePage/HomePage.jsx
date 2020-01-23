@@ -9,18 +9,17 @@ const HomePage = props => {
     <div className="HomePage">
 
 <NavBar />
-      {/* <Login user={props.user} handlelogout={props.handlelogout} /> */}
 
       <MDBContainer>
 
   <MDBRow>
-  <MDBCol className= "col top" size="12"><Card>.col-6</Card></MDBCol>
+  <MDBCol className= "col top" size="12"><Card><img alt='pizza' src='https://mobile-cuisine.com/wp-content/uploads/2012/11/pizza-fun-facts.jpg'/></Card></MDBCol>
   </MDBRow>
 
   <MDBRow>
-    <MDBCol className= "col" sm="4"><Card>.col-6</Card></MDBCol>
-    <MDBCol className= "col" sm="4"><Card>.col-6</Card></MDBCol>
-    <MDBCol className= "col" sm="4"><Card>.col-6</Card></MDBCol>
+    <MDBCol className= "col" sm="4"><Card></Card></MDBCol>
+    <MDBCol className= "col" sm="4"><Card></Card></MDBCol>
+    <MDBCol className= "col" sm="4"><Card></Card></MDBCol>
   </MDBRow>
 
 </MDBContainer>

@@ -2,26 +2,47 @@ import React, {Component} from 'react';
 import  {MDBContainer} from "mdbreact";
 import {Link} from 'react-router-dom';
 import NavBar from "../../components/NavBar/NavBar";
+import {update} from '../../Services/Services'
 
 class EditPage extends Component {
   state = {
-    invalidForm: false,
-    formData: this.props.location.state.item
+    name: '',
+    description: '',
+    price: ''
   };
+
+  componentDidMount = () => {
+    this.setState({
+      name: this.props.location.state.name,
+      description: this.props.location.state.description,
+      price: this.props.location.state.price,
+    })
+  }
 
   formRef = React.createRef();
 
-  handleSubmit = e => {
+  handleSubmit = async e => {
     e.preventDefault();
-    this.props.handleUpdateItem(this.state.formData);
+    const {name, description, price} = this.state
+
+    // create the item object
+    const item = {
+      name,
+      description,
+      price,
+      _id: this.props.location.state._id
+    }
+
+    // call update on it
+    await update(item)
+    this.props.history.push('/menu')
   };
 
-  handleChange = e => {
-    const formData = {...this.state.formData, [e.target.name]: e.target.value};
+  handleChange = (e, name) => {
+    const {value} = e.target;
     this.setState({
-      formData,
-      invalidForm: !this.formRef.current.checkValidity()
-    });
+      [name]: value
+    })
   };
 
   render() {
@@ -36,8 +57,8 @@ class EditPage extends Component {
             <input
               className="form-control"
               name="name"
-              value={this.state.formData.name}
-              onChange={this.handleChange}
+              value={this.state.name}
+              onChange={(e) => this.handleChange(e, 'name')}
               required
             />
           </div>
@@ -46,8 +67,8 @@ class EditPage extends Component {
             <input
               className="form-control"
               name="description"
-            //   value={this.state.formData.description}
-              onChange={this.handleChange}
+              value={this.state.description}
+              onChange={(e) => this.handleChange(e, 'description')}
               required
             />
           </div>
@@ -56,14 +77,13 @@ class EditPage extends Component {
             <input
               className="form-control"
               name="price"
-            //   value={this.state.formData.price}
-              onChange={this.handleChange}
+              value={this.state.price}
+              onChange={(e) => this.handleChange(e, 'price')}
             />
           </div>
           <button
             type="submit"
             className="btn btn-xs"
-            disabled={this.state.invalidForm}
           >
             SAVE Item
           </button>&nbsp;&nbsp;
