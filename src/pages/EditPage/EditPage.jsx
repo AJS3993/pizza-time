@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import NavBar from "../../components/NavBar/NavBar";
 import {update} from '../../Services/Services'
 
+
 class EditPage extends Component {
   state = {
     name: '',
@@ -90,6 +91,7 @@ class EditPage extends Component {
           <Link to='/'>CANCEL</Link>
         </form>
         </MDBContainer>
+        
       </>
     );
   }

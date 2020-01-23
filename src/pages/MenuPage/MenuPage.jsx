@@ -3,9 +3,6 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import NavBar from "../../components/NavBar/NavBar";
 import "./MenuPage.css";
-// import menu from './../../components/MenuListItem/MenuListItem'
-// import MenuListItemStuff from './../../components/MenuListItemStuff/MenuListItemStuff'
-// import { render } from "@testing-library/react";
 import { getAll } from "./../../Services/Services"
 import * as Services from '../../Services/Services';
 
@@ -47,9 +44,9 @@ class MenuPage extends Component {
             <MDBCol className="col top" size="12">
 
               {menu.map(item => (<Card>
-                {item.name} <br />
-                {item.description} <br />
-                {item.price} <br />
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+                <p>{item.price}</p>
 
                 <div className='buttons'>
 
@@ -93,7 +90,6 @@ class MenuPage extends Component {
           </MDBRow>
 
         </MDBContainer>
-
       </div>
     )
   }

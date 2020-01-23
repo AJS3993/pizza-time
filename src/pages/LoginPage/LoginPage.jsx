@@ -4,6 +4,7 @@ import "./LoginPage.css";
 import userService from "../../utils/userService";
 import NavBar from "../../components/NavBar/NavBar";
 
+
 class LoginPage extends Component {
   state = {
     email: "",
@@ -68,7 +69,9 @@ class LoginPage extends Component {
             </div>
           </div>
         </form>
+        
       </div>
+      
     );
   }
 }

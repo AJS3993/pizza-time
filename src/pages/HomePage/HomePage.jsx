@@ -1,6 +1,5 @@
 import  {MDBContainer, MDBRow, MDBCol, Card} from "mdbreact";
 import React from "react";
-// import Login from "../../components/Login/Login";
 import NavBar from "../../components/NavBar/NavBar";
 import "./HomePage.css";
 import Footer from "./../../components/Footer/Footer"
@@ -24,6 +23,7 @@ const HomePage = props => {
   </MDBRow>
 </MDBContainer>
 
+<Footer />
 
     </div>
   );

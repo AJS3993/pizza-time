@@ -1,6 +1,5 @@
 import  {MDBContainer, MDBRow, MDBCol} from "mdbreact";
 import React from "react";
-// import Login from "../../components/Login/Login";
 import NavBar from "../../components/NavBar/NavBar";
 
 
@@ -14,6 +13,7 @@ const OrderPage = () => {
             <MDBCol className= "col top" size="12"><h1>Order</h1></MDBCol>
         </MDBRow>
       </MDBContainer> 
+      
     </div>
   );
 };

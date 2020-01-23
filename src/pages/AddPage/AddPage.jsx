@@ -2,6 +2,7 @@ import  {MDBContainer} from "mdbreact";
 import React, {Component} from 'react';
 import NavBar from "../../components/NavBar/NavBar";
 
+
 class AddPage extends Component {
   state = {
     invalidForm: true,
@@ -79,6 +80,7 @@ class AddPage extends Component {
           </button>
         </form>
         </MDBContainer>
+     
       </>
     );
   }
