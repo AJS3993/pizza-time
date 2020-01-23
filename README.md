@@ -6,7 +6,7 @@
 
 ## Purpose
 
-Pizza Time is your own personal library tracker. Sort your books to help you remember which books you have read and which books you haven't.
+Pizza Time is a tool for restaurant owners to create their menu and sell their food. Pizza Time is also a tool for users to order food directly from the app.
 
 
 ## Instructions
