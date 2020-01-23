@@ -44,6 +44,14 @@ Simply sign in with your google account and start adding your books.
 
 * settings page
 
+## Unsolved Problems
+
+* unable to add menu items to order
+
+## Trello
+
+https://trello.com/b/750bY4cx/pizza-time
+
 ## Heroku Link
 
 https://pizzatime465.herokuapp.com/
