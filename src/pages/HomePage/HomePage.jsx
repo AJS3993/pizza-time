@@ -10,7 +10,6 @@ const HomePage = props => {
 
 <NavBar />
 
-      
 
   <MDBRow>
   <MDBCol className= "col top" size="12"><Card><img alt='pizza' src='https://mobile-cuisine.com/wp-content/uploads/2012/11/pizza-fun-facts.jpg'/></Card></MDBCol>
