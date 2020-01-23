@@ -3,6 +3,7 @@ import React from "react";
 // import Login from "../../components/Login/Login";
 import NavBar from "../../components/NavBar/NavBar";
 import "./HomePage.css";
+import Footer from "./../../components/Footer/Footer"
 
 const HomePage = props => {
   return (
@@ -22,6 +23,7 @@ const HomePage = props => {
     <MDBCol className= "col bot" sm="4"><Card><img className= "pic" alt='pizza' src='https://www.pamperedchef.com/iceberg/com/recipe/9660-lg.jpg'/></Card></MDBCol>
   </MDBRow>
 </MDBContainer>
+
 
     </div>
   );

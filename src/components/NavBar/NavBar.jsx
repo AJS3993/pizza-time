@@ -16,7 +16,7 @@ const NavBar = (props) => (
     <Nav.Link><Link className='link' to="/add">Add Food</Link></Nav.Link>
     </Nav>
     <Nav>
-    <Nav.Link><Link className='link' to="/profile">User Profile</Link></Nav.Link>
+    <Nav.Link><Link className='link' to="/profile">About</Link></Nav.Link>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <Nav.Link><Link className='link' to="/order">Order</Link></Nav.Link>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
