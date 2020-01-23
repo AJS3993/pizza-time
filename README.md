@@ -11,7 +11,7 @@ Pizza Time is a tool for restaurant owners to create their menu and sell their f
 
 ## Instructions
 
-Simply sign in with your google account and start adding your books. 
+Add/Edit/Delete food on the menu.
 
 ## User Stories
 * AAU I want to be able to add foods and set prices on the menu
