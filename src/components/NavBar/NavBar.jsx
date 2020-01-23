@@ -7,18 +7,18 @@ import "./NavBar.css";
 
 const NavBar = (props) => (
     <div>
-      <Navbar bg="danger" variant="dark">
-    <Navbar.Brand><Link to="/">Pizza Time</Link></Navbar.Brand>
+      <Navbar bg="primary" variant="dark">
+    <Navbar.Brand><Link className='link' to="/">Pizza Time</Link></Navbar.Brand>
     <Nav className="mr-auto">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <Nav.Link><Link to="/menu">Menu</Link></Nav.Link>
+    <Nav.Link><Link className='link' to="/menu">Menu</Link></Nav.Link>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <Nav.Link><Link to="/add">Add Food</Link></Nav.Link>
+    <Nav.Link><Link className='link' to="/add">Add Food</Link></Nav.Link>
     </Nav>
     <Nav>
-    <Nav.Link><Link to="/profile">User Profile</Link></Nav.Link>
+    <Nav.Link><Link className='link' to="/profile">User Profile</Link></Nav.Link>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <Nav.Link><Link to="/order">Order</Link></Nav.Link>
+    <Nav.Link><Link className='link' to="/order">Order</Link></Nav.Link>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {/* <NavBar /> */}
       <Login user={props.user} handlelogout={props.handlelogout} />
