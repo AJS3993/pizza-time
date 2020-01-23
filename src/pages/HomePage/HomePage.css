@@ -6,10 +6,17 @@ body{
     text-align: center;
 }
 
-
-
-.top{
-    /* border: 2px solid rgb(77, 5, 5); */
-    margin: 5% 0 10% 0;
+.bot{
+    margin: 5% 0 0 0;
 }
 
+.top{
+    border: 2px solid rgb(77, 5, 5);
+    margin: 0 0 0 0;
+    padding:0;
+}
+
+.pic{
+    height: 300px;
+    border: 2px solid rgb(84, 50, 50);
+}
