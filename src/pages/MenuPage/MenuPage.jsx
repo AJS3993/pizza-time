@@ -41,7 +41,7 @@ class MenuPage extends Component {
           
           <MDBRow>
 
-              {menu.map(item => (<MDBCol sm="4" className="col top" ><Card>
+              {menu.map(item => (<MDBCol sm="4" className='col top' ><Card>
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
                 <p>{item.price}</p>
@@ -52,10 +52,7 @@ class MenuPage extends Component {
                     className='btn btn-xs btn-info'
                     to={{
                       pathname: '/order',
-                      state: { name: item.name, 
-                        description: item.description, 
-                        price: item.price,
-                        _id: item._id }
+                      state: { item }
                     }}
                   >
                     ORDER

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./LoginPage.css";
 import userService from "../../utils/userService";
 import NavBar from "../../components/NavBar/NavBar";
+import  {MDBContainer} from "mdbreact";
 
 
 class LoginPage extends Component {
@@ -35,7 +36,9 @@ class LoginPage extends Component {
     return (
       <div className="LoginPage">
         <NavBar />
-        <header className="header-footer">Log In</header>
+        <MDBContainer>
+          <br/>
+        <header className="header-footer"><h2>Log In</h2></header>
         <form className="form-horizontal" onSubmit={this.handleSubmit}>
           <div className="form-group">
             <div className="col-sm-12">
@@ -69,7 +72,7 @@ class LoginPage extends Component {
             </div>
           </div>
         </form>
-        
+        </MDBContainer>
       </div>
       
     );

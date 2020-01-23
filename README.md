@@ -20,6 +20,11 @@ Simply sign in with your google account and start adding your books.
 
 * AAU I want to know the total price of my order
 
+## Screenshots
+
+<img src="https://i.imgur.com/Nms5BQt.png" title="source: imgur.com" />
+
+<img src="https://i.imgur.com/U0PVKpN.png" title="source: imgur.com" />
 
 ## Tech
 
@@ -39,3 +44,6 @@ Simply sign in with your google account and start adding your books.
 
 * settings page
 
+## Heroku Link
+
+https://pizzatime465.herokuapp.com/

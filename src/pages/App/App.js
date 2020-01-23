@@ -127,9 +127,9 @@ class App extends Component {
           <Route
             exact
             path="/order"
-            render={({ history }) => (
+            render={({ location }) => (
               <OrderPage
-                
+              location={location}
                 />
             )}
           />

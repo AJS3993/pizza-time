@@ -1,10 +1,13 @@
 import  {MDBContainer, MDBRow, MDBCol} from "mdbreact";
-import React from "react";
+import React, {Component} from "react";
 import NavBar from "../../components/NavBar/NavBar";
 
 
-const OrderPage = () => {
-  return (
+class OrderPage extends Component {
+  
+
+  render() {
+    return (
     <div className="OrderPage">
         <NavBar />
         <br/>
@@ -13,15 +16,10 @@ const OrderPage = () => {
             <MDBCol className= "col top" size="12"><h1>Order</h1></MDBCol>
         </MDBRow>
       </MDBContainer> 
-     
-     {/* {order.map(item => (<Card>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                <p>{item.price}</p>
-                </Card>
-))}; */}
+
     </div>
   );
 };
+}
 
 export default OrderPage;
