@@ -5,7 +5,11 @@ import NavBar from "../../components/NavBar/NavBar";
 
 class OrderPage extends Component {
   
-  order = [1,2]
+  state = {
+    name: '',
+    description: '',
+    price: ''
+  };
 
 
   render() {
@@ -17,7 +21,7 @@ class OrderPage extends Component {
       <MDBContainer>
         <MDBRow>
       
-{this.order}
+{this.state.name}
 
         </MDBRow>
         
