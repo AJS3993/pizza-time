@@ -23,13 +23,13 @@ class MenuPage extends Component {
 
   async componentDidMount() {
     const menu = await getAll();
-    console.log(menu)
+    // console.log(menu)
     this.setState({ menu });
   }
 
   render() {
     const { menu } = this.state
-    console.log(menu)
+    // console.log(menu)
 
     return (
       <div className="MenuPage">
