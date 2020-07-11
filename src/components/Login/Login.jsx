@@ -1,5 +1,6 @@
-import  {Button}  from 'react-bootstrap';
+
 import React from "react";
+import { MDBBtn } from "mdbreact";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
@@ -22,13 +23,13 @@ const Login = props => {
     <div>
 
       
-      <Button variant="success"><Link to="/login" className="Login-link">
+      <MDBBtn rounded color="blue darken-4" className='p-3'><strong><Link to="/login" className="Login-link white-text">
         LOG IN
-      </Link></Button>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <Button variant="success"><Link to="/signup" className="Login-link">
+      </Link></strong></MDBBtn>
+      &nbsp;&nbsp;
+      <MDBBtn rounded color="blue darken-4" className='p-3'><strong><Link to="/signup" className="Login-link white-text">
         SIGN UP
-      </Link></Button>
+      </Link></strong></MDBBtn>
     
 
     </div>

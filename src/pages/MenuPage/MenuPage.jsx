@@ -1,7 +1,7 @@
 import { MDBContainer, MDBRow, MDBCol, Card } from "mdbreact";
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import NavBar from "../../components/NavBar/NavBar";
+import Banner from "../../components/Banner/Banner";
 import "./MenuPage.css";
 import { getAll } from "../../services2/services2"
 import * as Services from '../../services2/services2';
@@ -33,7 +33,7 @@ class MenuPage extends Component {
 
     return (
       <div className="MenuPage">
-        <NavBar />
+        <Banner />
 
           <h1>Menu</h1>
           
