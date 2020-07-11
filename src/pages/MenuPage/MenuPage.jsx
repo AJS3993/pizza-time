@@ -1,4 +1,4 @@
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBBtn } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBBtn, MDBCardImage, MDBIcon } from "mdbreact";
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Banner from "../../components/Banner/Banner";
@@ -36,30 +36,37 @@ class MenuPage extends Component {
       <div className="MenuPage">
         <Banner />
 
+
+
         <MDBBtn className="border border-white white-text blue darken-4 w-100 rounded-bottom mb-5" rounded><h2 className='p-0 m-0 font-weight-bold'>P i z z a s</h2></MDBBtn>
-          
-          <MDBContainer>
+  
           
           <MDBRow>
 
-              {menu.map(item => (<MDBCol sm="4" className='col top' ><MDBCard>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                <p>{item.price}</p>
-
-                <div className='buttons'>
+              {menu.map(item => (<MDBCol md="2">
+                <MDBCard className='mb-4 blue darken-2 border border-white text-white'>
+                  <MDBCardImage className="img-fluid" src="https://i.imgur.com/z8JExVW.png?1" waves />
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                  <p>{item.price}</p>
+  <MDBRow>              
+<MDBCol md='4'>
 
                   <Link
-                    className='btn btn-xs btn-info'
                     to={{
                       pathname: '/order',
                       state: { item }
                     }}
-                  >
+                  ><MDBBtn className='font-weight-bold red darken-2 hoverable' rounded>
                     ORDER
+                    </MDBBtn>
                   </Link>
+
+                  </MDBCol>
+                  <MDBCol md='4'>
+
                   <Link
-                    className='btn btn-xs btn-warning'
+                    
                     to={{
                       pathname: '/edit',
                       state: { 
@@ -67,27 +74,24 @@ class MenuPage extends Component {
                         description: item.description, 
                         price: item.price,
                         _id: item._id
-                      }
-                    }}
-                  >
-                    EDIT
-        </Link>
+                      }}} >
 
-                  <button
-                    className='btn btn-xs btn-danger margin-left-10'
-                    onClick={() => this.handleDeleteItem(item._id)}
-                  >
-                    DELETE
-        </button>
-
-                </div>
-
+                 <MDBBtn rounded><MDBIcon icon="pen" /></MDBBtn>
+              </Link>
+              </MDBCol>
+              <MDBCol className='p-2 mx-n1' md='4'>
+                  <MDBBtn rounded className='red darken-2 m-0' onClick={() => this.handleDeleteItem(item._id)}>
+                  <MDBIcon icon="backspace" />
+                  </MDBBtn>
+                  </MDBCol>
+                  </MDBRow>  
               </MDBCard>
              
             </MDBCol>
+            
             ))}
           </MDBRow>
-          </MDBContainer>
+     
           <Footer/>
       </div>
     )

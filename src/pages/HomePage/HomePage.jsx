@@ -39,7 +39,7 @@ const HomePage = props => {
                 className="d-inline float-right img-fluid w-50"
                 alt=""
               />
-               <h4 className='w-50 d-inline float-left white-text p-5'>Try one of our delicious specialty pizzas and find your new favorite. Customize any size pizza with your favorite toppings, cheese and sauce. You love pizza, we love pizza - it's a perfect fit.</h4>
+               <h5 className='w-50 d-inline float-left white-text p-4'>Try one of our delicious specialty pizzas and find your new favorite. Customize any size pizza with your favorite toppings, cheese and sauce. You love pizza, we love pizza - it's a perfect fit.</h5>
               <div className="stripe dark">
                 <a href="#!">
                   <p>
