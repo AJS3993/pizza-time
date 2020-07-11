@@ -5,7 +5,7 @@ import SignupPage from "../SignupPage/SignupPage";
 import LoginPage from "../LoginPage/LoginPage";
 import userService from "../../utils/userService";
 import MenuPage from "./../MenuPage/MenuPage";
-import ProfilePage from "./../ProfilePage/ProfilePage";
+import AboutPage from "./../AboutPage/AboutPage";
 import EditPage from './../EditPage/EditPage';
 import OrderPage from "./../OrderPage/OrderPage";
 import AddPage from './../AddPage/AddPage';
@@ -72,7 +72,7 @@ class App extends Component {
   render() {
     return (
       
-      <div>
+      <div className='app'>
 
         <Switch>
           <Route
@@ -120,9 +120,9 @@ class App extends Component {
 
           <Route
             exact
-            path="/profile"
+            path="/about"
             render={({ history }) => (
-              <ProfilePage
+              <AboutPage
                 
                 />
             )}

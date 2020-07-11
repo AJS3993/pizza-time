@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import  {MDBContainer} from "mdbreact";
 import {Link} from 'react-router-dom';
-import NavBar from "../../components/NavBar/NavBar";
+import Banner from "../../components/Banner/Banner";
+import Footer from "./../../components/Footer/Footer";
 import {update} from '../../services2/services2'
 
 
@@ -49,7 +50,7 @@ class EditPage extends Component {
   render() {
     return (
       <>
-      <NavBar/>
+      <Banner/>
         <h1>Edit Item</h1>
         <MDBContainer>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
@@ -91,7 +92,7 @@ class EditPage extends Component {
           <Link to='/'>CANCEL</Link>
         </form>
         </MDBContainer>
-        
+        <Footer/>
       </>
     );
   }

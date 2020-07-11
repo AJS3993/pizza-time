@@ -1,13 +1,14 @@
 import  {MDBContainer, MDBRow, MDBCol} from "mdbreact";
 import React from "react";
-import NavBar from "../../components/NavBar/NavBar";
-import "./ProfilePage.css";
+import Banner from "../../components/Banner/Banner";
+import Footer from "./../../components/Footer/Footer";
+import "./AboutPage.css";
 
 
-const ProfilePage = () => {
+const AboutPage = () => {
   return (
-    <div className="ProfilePage">
-        <NavBar />
+    <div className="AboutPage">
+        <Banner />
         <br/>
       <MDBContainer>
         <MDBRow>
@@ -32,8 +33,9 @@ const ProfilePage = () => {
         <li>JSON Web Tokens</li>
       </ul>
       </center>
+      <Footer/>
     </div>
   );
 };
 
-export default ProfilePage;
+export default AboutPage;

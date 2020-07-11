@@ -1,6 +1,7 @@
 import  {MDBContainer} from "mdbreact";
 import React, {Component} from 'react';
-import NavBar from "../../components/NavBar/NavBar";
+import Banner from "../../components/Banner/Banner";
+import Footer from "./../../components/Footer/Footer";
 
 
 class AddPage extends Component {
@@ -34,7 +35,7 @@ class AddPage extends Component {
   render() {
     return (
       <>
-      <NavBar/>
+      <Banner/>
         <h1>Add Food</h1>
         <MDBContainer>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
@@ -80,7 +81,7 @@ class AddPage extends Component {
           </button>
         </form>
         </MDBContainer>
-     
+        <Footer/>
       </>
     );
   }

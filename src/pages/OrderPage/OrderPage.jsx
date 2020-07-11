@@ -1,6 +1,7 @@
 import  {MDBContainer, MDBRow} from "mdbreact";
 import React, {Component} from "react";
-import NavBar from "../../components/NavBar/NavBar";
+import Banner from "../../components/Banner/Banner";
+import Footer from "./../../components/Footer/Footer";
 
 
 class OrderPage extends Component {
@@ -15,7 +16,7 @@ class OrderPage extends Component {
   render() {
     return (
     <div className="OrderPage">
-        <NavBar />
+        <Banner />
         <br/>
     
       <MDBContainer>
@@ -26,7 +27,7 @@ class OrderPage extends Component {
         </MDBRow>
         
        </MDBContainer> 
-
+       <Footer/>
     </div>
        );
 };

@@ -1,7 +1,8 @@
-import { MDBContainer, MDBRow, MDBCol, Card } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBBtn } from "mdbreact";
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Banner from "../../components/Banner/Banner";
+import Footer from "./../../components/Footer/Footer";
 import "./MenuPage.css";
 import { getAll } from "../../services2/services2"
 import * as Services from '../../services2/services2';
@@ -35,13 +36,13 @@ class MenuPage extends Component {
       <div className="MenuPage">
         <Banner />
 
-          <h1>Menu</h1>
+        <MDBBtn className="border border-white white-text blue darken-4 w-100 rounded-bottom mb-5" rounded><h2 className='p-0 m-0 font-weight-bold'>P i z z a s</h2></MDBBtn>
           
           <MDBContainer>
           
           <MDBRow>
 
-              {menu.map(item => (<MDBCol sm="4" className='col top' ><Card>
+              {menu.map(item => (<MDBCol sm="4" className='col top' ><MDBCard>
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
                 <p>{item.price}</p>
@@ -81,13 +82,13 @@ class MenuPage extends Component {
 
                 </div>
 
-              </Card>
+              </MDBCard>
              
             </MDBCol>
             ))}
           </MDBRow>
           </MDBContainer>
-     
+          <Footer/>
       </div>
     )
   }

@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./LoginPage.css";
 import userService from "../../utils/userService";
-import NavBar from "../../components/NavBar/NavBar";
+import Banner from "../../components/Banner/Banner";
+import Footer from "./../../components/Footer/Footer";
 import  {MDBContainer} from "mdbreact";
 
 
@@ -35,7 +36,7 @@ class LoginPage extends Component {
   render() {
     return (
       <div className="LoginPage">
-        <NavBar />
+        <Banner />
         <MDBContainer>
           <br/>
         <header className="header-footer"><h2>Log In</h2></header>
@@ -73,6 +74,7 @@ class LoginPage extends Component {
           </div>
         </form>
         </MDBContainer>
+        <Footer/>
       </div>
       
     );
