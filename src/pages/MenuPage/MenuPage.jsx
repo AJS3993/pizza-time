@@ -1,4 +1,4 @@
-import {MDBRow, MDBCol, MDBCard, MDBBtn, MDBCardImage, MDBIcon } from "mdbreact";
+import {MDBRow, MDBCol, MDBCard, MDBBtn, MDBCardImage, MDBIcon, MDBContainer } from "mdbreact";
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Banner from "../../components/Banner/Banner";
@@ -35,63 +35,55 @@ class MenuPage extends Component {
     return (
       <div className="MenuPage">
         <Banner />
+        <MDBContainer>
+        <MDBBtn className="border border-white white-text blue darken-4 w-100 rounded-bottom mb-5" rounded>
+          <h2 className='p-0 m-0 font-weight-bold'>
+            P i z z a s
+          </h2>
+        </MDBBtn>
+        </MDBContainer>
+<MDBContainer>
 
+        <MDBRow className='w-80 d-flex justify-content-center'>
 
-
-        <MDBBtn className="border border-white white-text blue darken-4 w-100 rounded-bottom mb-5" rounded><h2 className='p-0 m-0 font-weight-bold'>P i z z a s</h2></MDBBtn>
-  
+        {menu.map(item => (<MDBCol size="3">
+          <MDBCard className='mb-4 blue darken-4 border border-white text-white'>
+            
+            <h2 className='d-flex justify-content-center'>{item.name}</h2>
+            <MDBCardImage className="img-fluid border border-white" src="https://i.imgur.com/z8JExVW.png?1" waves />
+            <h4 className='d-flex justify-content-center my-2'>{item.description}</h4>
+            <h4 className='d-flex justify-content-center'>${item.price}</h4>
+            
+            
+            
           
-          <MDBRow>
-
-              {menu.map(item => (<MDBCol md="2">
-                <MDBCard className='mb-4 blue darken-2 border border-white text-white'>
-                  <MDBCardImage className="img-fluid" src="https://i.imgur.com/z8JExVW.png?1" waves />
-                  <h3>{item.name}</h3>
-                  <p>{item.description}</p>
-                  <p>{item.price}</p>
-  <MDBRow>              
-<MDBCol md='4'>
-
-                  <Link
-                    to={{
-                      pathname: '/order',
-                      state: { item }
-                    }}
-                  ><MDBBtn className='font-weight-bold red darken-2 hoverable' rounded>
-                    ORDER
+              
+              <MDBRow>
+                <MDBCol size='6'>
+                  <Link to={{ pathname: '/edit', state: { 
+                      name: item.name, 
+                      description: item.description, 
+                      price: item.price,
+                      _id: item._id
+                      }}} >
+                    <MDBBtn rounded>
+                      <MDBIcon icon="pen" />
                     </MDBBtn>
                   </Link>
-
-                  </MDBCol>
-                  <MDBCol md='4'>
-
-                  <Link
-                    
-                    to={{
-                      pathname: '/edit',
-                      state: { 
-                        name: item.name, 
-                        description: item.description, 
-                        price: item.price,
-                        _id: item._id
-                      }}} >
-
-                 <MDBBtn rounded><MDBIcon icon="pen" /></MDBBtn>
-              </Link>
-              </MDBCol>
-              <MDBCol className='p-2 mx-n1' md='4'>
-                  <MDBBtn rounded className='red darken-2 m-0' onClick={() => this.handleDeleteItem(item._id)}>
-                  <MDBIcon icon="backspace" />
+                </MDBCol>
+                <MDBCol size='6' className='d-flex justify-content-end'>
+                  <MDBBtn rounded className='red darken-2 d-flex justify-content-center' onClick={() => this.handleDeleteItem(item._id)}>
+                    <strong>X</strong>
                   </MDBBtn>
-                  </MDBCol>
-                  </MDBRow>  
-              </MDBCard>
-             
-            </MDBCol>
+                </MDBCol>
+              </MDBRow>  
             
+
+            </MDBCard>
+          </MDBCol>
             ))}
           </MDBRow>
-     
+          </MDBContainer>
           <Footer/>
       </div>
     )

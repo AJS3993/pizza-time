@@ -11,7 +11,7 @@ const NavBar = (props) => (
     <MDBNavbarBrand ><strong><Link className='white-text font-italic' to="/"><MDBIcon icon="pizza-slice" /><h3 className="font-weight-bold">Pizza Time</h3></Link></strong></MDBNavbarBrand>
     <MDBNavbarNav left>
     <MDBBtnGroup>
-    <Link className='link' to="/menu"><MDBBtn className='red darken-4'><h5 className="font-weight-bold white-text">Menu</h5></MDBBtn></Link>
+    <Link className='link' to="/menu"><MDBBtn className='red darken-4'><h5 className="font-weight-bold white-text">Edit Menu</h5></MDBBtn></Link>
     <Link className='link' to="/add"><MDBBtn className='red darken-4'><h5 className="font-weight-bold white-text">Add Food</h5></MDBBtn></Link>
     </MDBBtnGroup>
     </MDBNavbarNav>
