@@ -7,7 +7,7 @@ const Banner = () => {
    
       <MDBRow>
         <MDBCol>
-          <MDBJumbotron className="text-center py-0 blue darken-4 z-depth-3 border border-white">
+          <MDBJumbotron className="text-center py-0 blue darken-4 z-depth-3 border border-white border-top-0">
           <NavBar/>
             <MDBCardBody className='pb-0 py-1 px-0 '>
              <MDBRow>

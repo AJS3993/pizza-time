@@ -11,15 +11,15 @@ const NavBar = (props) => (
     <MDBNavbarBrand ><strong><Link className='white-text font-italic' to="/"><MDBIcon icon="pizza-slice" /><h3 className="font-weight-bold">Pizza Time</h3></Link></strong></MDBNavbarBrand>
     <MDBNavbarNav left>
     <MDBBtnGroup>
-    <MDBBtn className='red darken-4'><Link className='link' to="/menu"><h5 className="font-weight-bold white-text">Menu</h5></Link></MDBBtn>
-    <MDBBtn className='red darken-4'><Link className='link' to="/add"><h5 className="font-weight-bold white-text">Add Food</h5></Link></MDBBtn>
+    <Link className='link' to="/menu"><MDBBtn className='red darken-4'><h5 className="font-weight-bold white-text">Menu</h5></MDBBtn></Link>
+    <Link className='link' to="/add"><MDBBtn className='red darken-4'><h5 className="font-weight-bold white-text">Add Food</h5></MDBBtn></Link>
     </MDBBtnGroup>
     </MDBNavbarNav>
     
     <MDBNavbarNav right>
     <MDBBtnGroup>
-    <MDBBtn className='red darken-4'><Link className='link' to="/about"><h5 className="font-weight-bold white-text">About</h5></Link></MDBBtn>
-    <MDBBtn className='red darken-4'><Link className='link' to="/order"><h5 className="font-weight-bold white-text">Order</h5></Link></MDBBtn>
+    <Link className='link' to="/about"><MDBBtn className='red darken-4'><h5 className="font-weight-bold white-text">About</h5></MDBBtn></Link>
+  <Link className='link' to="/order">  <MDBBtn className='red darken-4'><h5 className="font-weight-bold white-text">Order</h5></MDBBtn></Link>
     </MDBBtnGroup>
     </MDBNavbarNav>
   

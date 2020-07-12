@@ -4,6 +4,7 @@ import "./SignupPage.css";
 import Banner from "../../components/Banner/Banner";
 import Footer from "./../../components/Footer/Footer";
 
+
 class SignupPage extends Component {
   constructor(props) {
     super(props);
@@ -20,6 +21,7 @@ class SignupPage extends Component {
         <Banner />
         <SignupForm {...this.props} updateMessage={this.updateMessage} />
         <p>{this.state.message}</p>
+
         <Footer/>
       </div>
     );
