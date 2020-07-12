@@ -4,7 +4,7 @@ import "./LoginPage.css";
 import userService from "../../utils/userService";
 import Banner from "../../components/Banner/Banner";
 import Footer from "./../../components/Footer/Footer";
-import  {MDBContainer, MDBIcon, MDBInput, MDBCard, MDBCol, MDBRow, MDBCardBody, MDBBtn,} from "mdbreact";
+import  {MDBContainer, MDBIcon, MDBInput, MDBCard, MDBCol, MDBRow, MDBCardBody} from "mdbreact";
 
 
 class LoginPage extends Component {

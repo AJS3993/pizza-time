@@ -68,7 +68,7 @@ class SignupForm extends Component {
                       <MDBRow className='mt-5'>
                        
                         <MDBCol md='12'>
-                          <MDBRow className='pb-4 d-flex justify-content-center mb-5'>
+                          <MDBRow className=' d-flex justify-content-center'>
                             <h4 className='mt-3 mr-4'>
                               <strong>Login with</strong>
                             </h4>
@@ -77,14 +77,14 @@ class SignupForm extends Component {
                                 <MDBIcon
                                   fab
                                   icon='twitter'
-                                  size='lg'
+                                  size='3x'
                                   className='p-2 m-2 indigo-text tw-ic'
                                 />
                               </a>
                               <a href='!#'>
                                 <MDBIcon
                                   fab
-                                  size='lg'
+                                  size='3x'
                                   icon='facebook'
                                   className='p-2 m-2 fa-lg li-ic indigo-text'
                                 />
@@ -92,7 +92,7 @@ class SignupForm extends Component {
                               <a href='!#'>
                                 <MDBIcon
                                   fab
-                                  size='lg'
+                                  size='3x'
                                   icon='instagram'
                                   className='p-2 m-2 fa-lg ins-ic indigo-text'
                                 />

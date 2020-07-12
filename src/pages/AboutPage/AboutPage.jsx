@@ -32,13 +32,13 @@ const AboutPage = () => {
             <h4 className='card-title'>Andrew Smith</h4>
             <hr />
             <p>
-            <MDBBtn size="lg" tag="a" floating social="li">
+            <MDBBtn size="lg" tag="a" href='https://www.linkedin.com/in/ajs3993/' floating social="li">
         <MDBIcon fab icon="linkedin-in" />
       </MDBBtn>
-      <MDBBtn size="lg" tag="a" floating social="git">
+      <MDBBtn size="lg" tag="a" href='https://github.com/AJS3993' floating social="git">
         <MDBIcon fab icon="github" />
       </MDBBtn>
-      <MDBBtn size="lg" tag="a" floating social="email">
+      <MDBBtn size="lg" tag="a" href='https://ajs3993.github.io/dev-portfolio/' floating social="email">
         <MDBIcon icon="envelope" />
       </MDBBtn>
             </p>
