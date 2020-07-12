@@ -9,6 +9,7 @@ import AboutPage from "./../AboutPage/AboutPage";
 import EditPage from './../EditPage/EditPage';
 import OrderPage from "./../OrderPage/OrderPage";
 import AddPage from './../AddPage/AddPage';
+import Map from './../Map/Map';
 import * as Services from '../../services2/services2';
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
@@ -123,6 +124,16 @@ class App extends Component {
             path="/about"
             render={({ history }) => (
               <AboutPage
+                
+                />
+            )}
+          />
+
+<Route
+            exact
+            path="/map"
+            render={({ history }) => (
+              <Map
                 
                 />
             )}
