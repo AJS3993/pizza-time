@@ -1,16 +1,7 @@
 import React from 'react';
 import Banner from "../../components/Banner/Banner";
 import Footer from "./../../components/Footer/Footer";
-import {
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBContainer,
-  MDBView,
-  MDBInput,
-  MDBBtn
-} from 'mdbreact';
+import {MDBContainer} from 'mdbreact';
 
 import GoogleMapReact from 'google-map-react';
 

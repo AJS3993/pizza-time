@@ -1,6 +1,6 @@
 
 import React, {Component} from 'react';
-import  {MDBContainer, MDBIcon, MDBInput, MDBCard, MDBCol, MDBRow, MDBCardBody, Link, MDBInputGroup} from "mdbreact";
+import  {MDBContainer, MDBInput, MDBCard, MDBCol, MDBRow, MDBCardBody, Link, MDBInputGroup} from "mdbreact";
 import Banner from "../../components/Banner/Banner";
 import Footer from "./../../components/Footer/Footer";
 

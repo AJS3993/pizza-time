@@ -1,4 +1,4 @@
-import {MDBRow, MDBCol, MDBCard, MDBBtn, MDBCardImage, MDBIcon, MDBContainer } from "mdbreact";
+import {MDBRow, MDBCol, MDBCard, MDBBtn, MDBCardImage, MDBContainer } from "mdbreact";
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Banner from "../../components/Banner/Banner";

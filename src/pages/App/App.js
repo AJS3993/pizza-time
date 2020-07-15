@@ -9,6 +9,7 @@ import AboutPage from "./../AboutPage/AboutPage";
 import EditPage from './../EditPage/EditPage';
 import OrderPage from "./../OrderPage/OrderPage";
 import AddPage from './../AddPage/AddPage';
+import Cart from './../CartPage/CartPage';
 import Map from './../Map/Map';
 import * as Services from '../../services2/services2';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -134,6 +135,16 @@ class App extends Component {
             path="/map"
             render={({ history }) => (
               <Map
+                
+                />
+            )}
+          />
+
+<Route
+            exact
+            path="/cart"
+            render={({ history }) => (
+              <Cart
                 
                 />
             )}
