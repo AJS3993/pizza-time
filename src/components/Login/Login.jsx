@@ -21,8 +21,6 @@ const Login = props => {
     
   ) : (
     <div className='d-flex justify-content-center'>
-
-      
       
         <strong>
           <Link to="/login" className="Login-link white-text">

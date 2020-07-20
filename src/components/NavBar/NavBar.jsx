@@ -3,7 +3,7 @@ import React from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBBtn, MDBBtnGroup, MDBIcon } from "mdbreact";
 import Login from "./../Login/Login";
 import { Link } from "react-router-dom";
-import "./NavBar.css";
+import './Button.scss';
 
 const NavBar = (props) => (
 

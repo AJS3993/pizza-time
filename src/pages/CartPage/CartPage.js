@@ -11,10 +11,10 @@ class Cart extends Component {
     
     const data =[
       {"name":"test1",
-      "price":"$1.50",
+      "price":150,
       "number":"1"},
       {"name":"test2",
-      "price":"$2.00",
+      "price":200,
       "number":"1"},
     ];
     
@@ -48,7 +48,7 @@ class Cart extends Component {
           
           <td className="text-center"><h4><MDBBtn className="font-weight-bold px-3" color="primary" rounded size="sm">+</MDBBtn>{d.number}<MDBBtn className="font-weight-bold px-3" color="primary" rounded size="sm">-</MDBBtn></h4></td>
 
-          <td className="text-right"><h4>{d.price}</h4></td>
+          <td className="text-right"><h4>{(d.price/100).toFixed(2)}</h4></td>
         </tr>
          ))}
           </MDBTableBody>

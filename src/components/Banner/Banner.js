@@ -3,6 +3,7 @@ import { MDBJumbotron,  MDBRow, MDBCol, MDBIcon, MDBCardBody, MDBBtn } from "mdb
 import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar/NavBar";
 
+
 const Banner = () => {
   return (
    

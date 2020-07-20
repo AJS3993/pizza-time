@@ -4,6 +4,7 @@ import Banner from "../../components/Banner/Banner";
 import "./HomePage.css";
 import Footer from "./../../components/Footer/Footer";
 
+
 const HomePage = props => {
   return (
     <div className="HomePage">
