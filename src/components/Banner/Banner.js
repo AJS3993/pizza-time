@@ -33,8 +33,8 @@ const Banner = () => {
                 </MDBCol>
 
                 <MDBCol size='3' className='d-flex justify-content-end white-text py-3'>
-              
-                <MDBIcon icon="shopping-cart" size='2x'/>
+              {/* <h5 className="py-1 mb-0 pb-0 pr-2">$ 0.00</h5> */}
+              <Link className='link white-text' to="/cart"><MDBIcon icon="shopping-cart" size='2x'/></Link>
               
           </MDBCol>
              

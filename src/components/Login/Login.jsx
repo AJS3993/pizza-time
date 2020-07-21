@@ -23,7 +23,7 @@ const Login = props => {
     <div className='d-flex justify-content-center'>
       
         <strong>
-          <Link to="/login" className="Login-link white-text">
+          <Link to="/login" className="Login-link white-text mr-0">
           <MDBBtn rounded color="blue darken-4" className='h-100 border border-white'>
         LOG IN
         </MDBBtn>
@@ -33,7 +33,7 @@ const Login = props => {
       &nbsp;&nbsp;
       
         <strong>
-          <Link to="/signup" className="Login-link white-text">
+          <Link to="/signup" className="Login-link white-text mx-0">
           <MDBBtn rounded color="blue darken-4" className='h-100 border border-white'>
         SIGN UP
         </MDBBtn>

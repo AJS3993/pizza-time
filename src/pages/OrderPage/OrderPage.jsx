@@ -46,9 +46,9 @@ class OrderPage extends Component {
         <MDBRow className='w-80 d-flex justify-content-center'>
 
         {menu.map(item => (<MDBCol size="3">
-          <MDBCard className='mb-4 blue darken-4 border border-white text-white'>
+          <MDBCard className='mb-4 blue darken-2 border border-white text-white z-depth-2'>
             
-            <h2 className='d-flex justify-content-center'>{item.name}</h2>
+            <h2 className='d-flex justify-content-center font-weight-bold my-1'>{item.name}</h2>
             <MDBCardImage className="img-fluid border border-white" src="https://i.imgur.com/z8JExVW.png?1" waves />
             <h4 className='d-flex justify-content-center my-2'>{item.description}</h4>
             <h4 className='d-flex justify-content-center'>${item.price}</h4>
